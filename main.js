@@ -84,7 +84,6 @@ function getFocus() {
     focus.textContent = localStorage.getItem('focus');
   }
 }
-
 // Set Focus
 function setFocus(e) {
   if (e.type === 'keypress') {
@@ -97,7 +96,6 @@ function setFocus(e) {
     localStorage.setItem('focus', e.target.innerText);
   }
 }
-
 name.addEventListener('keypress', setName);
 name.addEventListener('blur', setName);
 focus.addEventListener('keypress', setFocus);
